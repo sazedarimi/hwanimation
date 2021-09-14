@@ -1,0 +1,123 @@
+
+
+
+section{
+    width: 1000px;
+    height: 800px;
+    margin: 32px auto;
+}
+.row{
+    height: 150px;
+}
+.col-1-3{
+    height: 100%;
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.col-1-1{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.col-1-2{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.col-2-3{
+    width: 66.66%;
+    height: 100%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+.col-1-6{
+    width: 16.66%;
+    height: 100%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+.yellow{
+    height: 100%;
+    background: #ffed18cf;
+    -webkit-animation-name: rimi1;
+    -webkit-animation-duration: 6s;
+     animation-iteration-count: 6;
+    -webkit-animation-iteration-count: 6;
+}
+.green{
+    height: 100%;
+    background: #16e267d4;
+    -webkit-animation-name: rimi2;
+    position: relative;
+    -webkit-animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.red{
+    height: 100%;
+    background: #f97a3ec4;
+    -webkit-animation-name: rimi;
+    -webkit-animation-duration: 6s;
+
+    animation-iteration-count: 6;
+    -webkit-animation-iteration-count: 6;
+
+}
+
+
+.parple{
+    height: 100%;
+    background: #f165d9e3;
+    -webkit-animation-name: rimi3;
+    position: relative;
+    -webkit-animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+
+@keyframes rimi{
+    
+    from{background: #f97a3ec4}
+    to{background: blue; border-radius:50%; }
+
+}
+@keyframes rimi1{
+    
+    0%{background: #ffed18cf;}
+    20%{background: rgb(37, 221, 206);}
+    50%{background: red;}
+    80%{background: rgba(4, 1, 19, 0.438);}
+    100%{background:#ffed18cf;}
+
+}
+@keyframes rimi2{
+    
+    from{left: 0;}
+    20%{right: 200px;}
+     50%{left: 200px;}
+
+}
+@keyframes rimi3{
+    
+    0%{left: 0; right: 0;}
+    20%{left: 200px; top: 0;}
+    50%{left: 200px; top: 200px;}
+    75%{left: 0; top: 200px;}
+    100%{left: 0; top: 0;}
+}
